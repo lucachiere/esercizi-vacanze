@@ -15,9 +15,13 @@ export class PrenComponent implements OnInit {
  myForm: FormGroup;
  constructor(fb: FormBuilder) {
    this.myForm = fb.group({
-     'utente': ['', Validators.required],
+     'nome': ['', Validators.required],
+     'cognome': ['', Validators.required],
+     'indirizzo': ['', Validators.required],
+     'tel': ['', Validators.required],
      'email': ['', Validators.required],
-     'password': ['', Validators.required]
+     'date': ['', Validators.required],
+     'time': ['', Validators.required]
      
    });
  }
